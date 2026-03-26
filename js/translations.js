@@ -10,6 +10,7 @@ const translations = {
 
     // Hero
     "hero.badge": "เปิดให้บริการ",
+    "hero.workingHours": "จันทร์ - เสาร์ 08:30 - 18:30 | อาทิตย์ ปิด",
     "hero.subtitle": "อู่ เฮง กิมจุ้ย",
     "hero.tagline": "ศูนย์บริการรถยนต์ครบวงจร ถนนเทพารักษ์ กม.7 สมุทรปราการ",
     "hero.cta": "ติดต่อเรา",
@@ -50,10 +51,10 @@ const translations = {
     "branches.subtitle": "พร้อมให้บริการ 2 สาขา",
     "branches.branch1.name": "สาขา 1 - สำนักงานใหญ่",
     "branches.branch1.address": "ถนนเทพารักษ์ กม.7 สมุทรปราการ",
-    "branches.branch1.hours": "เปิดทุกวัน 08:00 - 18:00",
+    "branches.branch1.hours": "จันทร์ - เสาร์ 08:30 - 18:30 | อาทิตย์ ปิด",
     "branches.branch2.name": "สาขา 2",
     "branches.branch2.address": "สมุทรปราการ",
-    "branches.branch2.hours": "เปิดทุกวัน 08:00 - 18:00",
+    "branches.branch2.hours": "จันทร์ - เสาร์ 08:30 - 18:30 | อาทิตย์ ปิด",
     "branches.getDirections": "นำทาง",
 
     // Contact
@@ -82,6 +83,7 @@ const translations = {
 
     // Hero
     "hero.badge": "Now Open",
+    "hero.workingHours": "Mon - Sat 08:30 - 18:30 | Sun Closed",
     "hero.subtitle": "Heng Kimjuy Garage",
     "hero.tagline": "Full-Service Auto Care Center, Theparak Rd. Km.7, Samut Prakan",
     "hero.cta": "Contact Us",
@@ -122,10 +124,10 @@ const translations = {
     "branches.subtitle": "2 branches ready to serve you",
     "branches.branch1.name": "Branch 1 - Head Office",
     "branches.branch1.address": "Theparak Rd. Km.7, Samut Prakan",
-    "branches.branch1.hours": "Open daily 08:00 - 18:00",
+    "branches.branch1.hours": "Mon - Sat 08:30 - 18:30 | Sun Closed",
     "branches.branch2.name": "Branch 2",
     "branches.branch2.address": "Samut Prakan",
-    "branches.branch2.hours": "Open daily 08:00 - 18:00",
+    "branches.branch2.hours": "Mon - Sat 08:30 - 18:30 | Sun Closed",
     "branches.getDirections": "Get Directions",
 
     // Contact
@@ -154,6 +156,7 @@ const translations = {
 
     // Hero
     "hero.badge": "营业中",
+    "hero.workingHours": "周一至周六 08:30 - 18:30 | 周日休息",
     "hero.subtitle": "恒金瑞汽车修理厂",
     "hero.tagline": "全方位汽车服务中心 他帕叻路7公里 北榄府",
     "hero.cta": "联系我们",
@@ -194,10 +197,10 @@ const translations = {
     "branches.subtitle": "2家分店随时为您服务",
     "branches.branch1.name": "分店1 - 总部",
     "branches.branch1.address": "他帕叻路7公里 北榄府",
-    "branches.branch1.hours": "每天营业 08:00 - 18:00",
+    "branches.branch1.hours": "周一至周六 08:30 - 18:30 | 周日休息",
     "branches.branch2.name": "分店2",
     "branches.branch2.address": "北榄府",
-    "branches.branch2.hours": "每天营业 08:00 - 18:00",
+    "branches.branch2.hours": "周一至周六 08:30 - 18:30 | 周日休息",
     "branches.getDirections": "获取路线",
 
     // Contact

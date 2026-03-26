@@ -76,6 +76,7 @@ function setLanguage(langCode) {
   document.documentElement.lang = langCode;
   persistLanguage(langCode);
   setFontForLanguage(langCode);
+  if (typeof updateOpenStatus === 'function') updateOpenStatus();
 }
 
 /**
