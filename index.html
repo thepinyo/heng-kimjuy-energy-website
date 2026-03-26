@@ -39,8 +39,11 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
 
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
     <!-- Favicon -->
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="images/logo.ico">
 </head>
 <body class="bg-gray-50 text-gray-900 font-thai antialiased">
 
@@ -49,7 +52,7 @@
         <nav class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
             <!-- Logo & Brand -->
             <a href="#hero" class="flex items-center gap-3 group">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center text-white font-bold text-lg shadow-md">H</div>
+                <div class="w-14 h-14 rounded-full overflow-hidden shadow-md"><img data-config="logo" src="images/logo.webp" alt="Logo" class="w-full h-full object-cover"></div>
                 <span class="text-lg font-bold text-gray-900 group-hover:text-primary transition-colors">Heng Kimjuy Energy</span>
             </a>
 
@@ -64,11 +67,17 @@
 
             <div class="flex items-center gap-2">
                 <!-- Language Switcher -->
-                <select id="lang-switcher" class="bg-gray-100 text-gray-700 rounded-lg px-3 py-2 text-sm min-h-[44px] border-0 focus:ring-2 focus:ring-primary/30 cursor-pointer" aria-label="Select language">
-                    <option value="th">🇹🇭 ไทย</option>
-                    <option value="en">🇬🇧 EN</option>
-                    <option value="zh">🇨🇳 中文</option>
-                </select>
+                <div id="lang-switcher" class="relative" aria-label="Select language">
+                    <button id="lang-current" class="flex items-center gap-1 p-1.5 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
+                        <img id="lang-current-img" src="images/icons/thailand.png" alt="Current language" class="w-7 h-7 rounded-sm">
+                        <svg class="w-3 h-3 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div id="lang-dropdown" class="hidden absolute right-0 top-full mt-1 bg-white rounded-lg shadow-lg border border-gray-100 py-1 z-[100] min-w-[120px]">
+                        <button data-lang="th" class="lang-btn flex items-center gap-2 px-3 py-1.5 hover:bg-gray-50 w-full transition-colors whitespace-nowrap"><img src="images/icons/thailand.png" alt="Thai" class="w-6 h-6 rounded-sm"><span class="text-sm text-gray-700">ไทย</span></button>
+                        <button data-lang="en" class="lang-btn flex items-center gap-2 px-3 py-1.5 hover:bg-gray-50 w-full transition-colors whitespace-nowrap"><img src="images/icons/english.png" alt="English" class="w-6 h-6 rounded-sm"><span class="text-sm text-gray-700">EN</span></button>
+                        <button data-lang="zh" class="lang-btn flex items-center gap-2 px-3 py-1.5 hover:bg-gray-50 w-full transition-colors whitespace-nowrap"><img src="images/icons/china.png" alt="Chinese" class="w-6 h-6 rounded-sm"><span class="text-sm text-gray-700">中文</span></button>
+                    </div>
+                </div>
 
                 <!-- Hamburger Button (mobile only) -->
                 <button id="hamburger-btn" class="md:hidden p-2 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg hover:bg-gray-100 transition-colors" aria-label="Toggle menu" aria-expanded="false">
@@ -96,18 +105,17 @@
         <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
             <!-- Background Image -->
             <div class="absolute inset-0">
-                <img src="https://images.unsplash.com/photo-1625047509248-ec889cbff17f?w=1920&q=80" alt="Auto repair garage" class="w-full h-full object-cover">
+                <img data-config="heroBg" src="" alt="Auto repair garage" class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/60 to-primary/40"></div>
             </div>
             <!-- Content -->
             <div class="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto">
-                <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-8 border border-white/20">
-                    <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-                    <span class="text-white/90 text-sm font-medium" data-i18n="hero.badge">เปิดให้บริการ</span>
+                <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-4 border border-white/20">
+                    <span id="status-dot" class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                    <span id="status-text" class="text-white/90 text-sm font-medium" data-i18n="hero.badge">เปิดให้บริการ</span>
                 </div>
-                <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold text-white mb-4 leading-tight tracking-tight">
-                    Heng Kimjuy<br><span class="text-primary">Energy</span>
-                </h1>
+                <p class="text-white/60 text-sm mb-8" data-i18n="hero.workingHours">จันทร์ - เสาร์ 08:30 - 18:30 | อาทิตย์ ปิด</p>
+                <h1 data-config="heroTitle" class="text-4xl sm:text-5xl md:text-7xl font-extrabold text-white mb-4 leading-tight tracking-tight"></h1>
                 <p class="text-lg sm:text-xl md:text-2xl text-white/80 mb-4 font-medium" data-i18n="hero.subtitle">อู่ เฮง กิมจุ้ย</p>
                 <p class="text-base sm:text-lg text-white/70 mb-10 max-w-2xl mx-auto" data-i18n="hero.tagline">ศูนย์บริการรถยนต์ครบวงจร ถนนเทพารักษ์ กม.7 สมุทรปราการ</p>
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -125,62 +133,7 @@
                     <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4" data-i18n="services.title">บริการของเรา</h2>
                     <p class="text-gray-500 max-w-2xl mx-auto" data-i18n="services.subtitle">บริการซ่อมบำรุงรถยนต์ครบวงจร ด้วยทีมช่างผู้เชี่ยวชาญ</p>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-                    <!-- Oil Change -->
-                    <div class="group bg-gray-50 hover:bg-primary rounded-2xl p-8 transition-all duration-300 hover:shadow-xl hover:shadow-primary/20 cursor-default">
-                        <div class="w-14 h-14 bg-primary/10 group-hover:bg-white/20 rounded-xl flex items-center justify-center mb-6 transition-colors">
-                            <span class="text-3xl">🛢️</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3 text-gray-900 group-hover:text-white transition-colors" data-i18n="services.oilChange.title">เปลี่ยนถ่ายน้ำมัน</h3>
-                        <p class="text-gray-500 group-hover:text-white/80 transition-colors leading-relaxed" data-i18n="services.oilChange.desc">บริการเปลี่ยนถ่ายน้ำมันเครื่อง น้ำมันเกียร์ และน้ำมันเบรก</p>
-                    </div>
-
-                    <!-- Engine Repair -->
-                    <div class="group bg-gray-50 hover:bg-primary rounded-2xl p-8 transition-all duration-300 hover:shadow-xl hover:shadow-primary/20 cursor-default">
-                        <div class="w-14 h-14 bg-primary/10 group-hover:bg-white/20 rounded-xl flex items-center justify-center mb-6 transition-colors">
-                            <span class="text-3xl">🔧</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3 text-gray-900 group-hover:text-white transition-colors" data-i18n="services.engineRepair.title">ซ่อมเครื่องยนต์</h3>
-                        <p class="text-gray-500 group-hover:text-white/80 transition-colors leading-relaxed" data-i18n="services.engineRepair.desc">ตรวจเช็คและซ่อมแซมเครื่องยนต์ทุกประเภท</p>
-                    </div>
-
-                    <!-- Brake Service -->
-                    <div class="group bg-gray-50 hover:bg-primary rounded-2xl p-8 transition-all duration-300 hover:shadow-xl hover:shadow-primary/20 cursor-default">
-                        <div class="w-14 h-14 bg-primary/10 group-hover:bg-white/20 rounded-xl flex items-center justify-center mb-6 transition-colors">
-                            <span class="text-3xl">🛑</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3 text-gray-900 group-hover:text-white transition-colors" data-i18n="services.brakeService.title">บริการเบรก</h3>
-                        <p class="text-gray-500 group-hover:text-white/80 transition-colors leading-relaxed" data-i18n="services.brakeService.desc">ตรวจสอบและเปลี่ยนผ้าเบรก จานเบรก น้ำมันเบรก</p>
-                    </div>
-
-                    <!-- Tire Service -->
-                    <div class="group bg-gray-50 hover:bg-primary rounded-2xl p-8 transition-all duration-300 hover:shadow-xl hover:shadow-primary/20 cursor-default">
-                        <div class="w-14 h-14 bg-primary/10 group-hover:bg-white/20 rounded-xl flex items-center justify-center mb-6 transition-colors">
-                            <span class="text-3xl">🔩</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3 text-gray-900 group-hover:text-white transition-colors" data-i18n="services.tireService.title">บริการยาง</h3>
-                        <p class="text-gray-500 group-hover:text-white/80 transition-colors leading-relaxed" data-i18n="services.tireService.desc">เปลี่ยนยาง ตั้งศูนย์ถ่วงล้อ และตรวจสอบสภาพยาง</p>
-                    </div>
-
-                    <!-- Air Conditioning -->
-                    <div class="group bg-gray-50 hover:bg-primary rounded-2xl p-8 transition-all duration-300 hover:shadow-xl hover:shadow-primary/20 cursor-default">
-                        <div class="w-14 h-14 bg-primary/10 group-hover:bg-white/20 rounded-xl flex items-center justify-center mb-6 transition-colors">
-                            <span class="text-3xl">❄️</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3 text-gray-900 group-hover:text-white transition-colors" data-i18n="services.airCon.title">ซ่อมแอร์รถยนต์</h3>
-                        <p class="text-gray-500 group-hover:text-white/80 transition-colors leading-relaxed" data-i18n="services.airCon.desc">เติมน้ำยาแอร์ ซ่อมระบบแอร์ และตรวจเช็คระบบทำความเย็น</p>
-                    </div>
-
-                    <!-- General Maintenance -->
-                    <div class="group bg-gray-50 hover:bg-primary rounded-2xl p-8 transition-all duration-300 hover:shadow-xl hover:shadow-primary/20 cursor-default">
-                        <div class="w-14 h-14 bg-primary/10 group-hover:bg-white/20 rounded-xl flex items-center justify-center mb-6 transition-colors">
-                            <span class="text-3xl">🔍</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3 text-gray-900 group-hover:text-white transition-colors" data-i18n="services.generalMaintenance.title">ตรวจเช็คทั่วไป</h3>
-                        <p class="text-gray-500 group-hover:text-white/80 transition-colors leading-relaxed" data-i18n="services.generalMaintenance.desc">บริการตรวจเช็คสภาพรถยนต์ครบวงจร ก่อนเดินทาง</p>
-                    </div>
-
+                <div id="services-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 </div>
             </div>
         </section>
@@ -193,34 +146,10 @@
                     <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4" data-i18n="gallery.title">ผลงานของเรา</h2>
                     <p class="text-gray-500 max-w-2xl mx-auto" data-i18n="gallery.subtitle">ภาพบรรยากาศอู่และผลงานซ่อมรถยนต์</p>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <div class="group relative overflow-hidden rounded-2xl aspect-[4/3] cursor-pointer" onclick="openLightbox(this.querySelector('img').src, this.querySelector('img').alt)">
-                        <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=600&q=80" alt="ผลงานซ่อมรถยนต์" data-i18n-alt="gallery.photo1.alt" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    </div>
-                    <div class="group relative overflow-hidden rounded-2xl aspect-[4/3] cursor-pointer" onclick="openLightbox(this.querySelector('img').src, this.querySelector('img').alt)">
-                        <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=600&q=80" alt="ภายในอู่ซ่อมรถ" data-i18n-alt="gallery.photo2.alt" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    </div>
-                    <div class="group relative overflow-hidden rounded-2xl aspect-[4/3] cursor-pointer" onclick="openLightbox(this.querySelector('img').src, this.querySelector('img').alt)">
-                        <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=600&q=80" alt="เครื่องมือซ่อมรถ" data-i18n-alt="gallery.photo3.alt" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    </div>
-                    <div class="group relative overflow-hidden rounded-2xl aspect-[4/3] cursor-pointer" onclick="openLightbox(this.querySelector('img').src, this.querySelector('img').alt)">
-                        <img src="https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?w=600&q=80" alt="บริการเปลี่ยนน้ำมัน" data-i18n-alt="gallery.photo4.alt" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    </div>
-                    <div class="group relative overflow-hidden rounded-2xl aspect-[4/3] cursor-pointer" onclick="openLightbox(this.querySelector('img').src, this.querySelector('img').alt)">
-                        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=600&q=80" alt="ซ่อมเครื่องยนต์" data-i18n-alt="gallery.photo5.alt" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    </div>
-                    <div class="group relative overflow-hidden rounded-2xl aspect-[4/3] cursor-pointer" onclick="openLightbox(this.querySelector('img').src, this.querySelector('img').alt)">
-                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=80" alt="ทีมช่างซ่อมรถ" data-i18n-alt="gallery.photo6.alt" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    </div>
+                <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 </div>
                 <div class="text-center mt-8">
-                    <a href="https://www.facebook.com/hengkimjuy/photos" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-primary hover:text-primary-dark font-semibold transition-colors" data-i18n="gallery.viewMore">
+                    <a data-config="galleryLink" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-primary hover:text-primary-dark font-semibold transition-colors" data-i18n="gallery.viewMore">
                         ดูเพิ่มเติมบน Facebook →
                     </a>
                 </div>
@@ -235,46 +164,7 @@
                     <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4" data-i18n="branches.title">สาขาของเรา</h2>
                     <p class="text-gray-500 max-w-2xl mx-auto" data-i18n="branches.subtitle">พร้อมให้บริการ 2 สาขา</p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-                    <!-- Branch 1 -->
-                    <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
-                        <div class="aspect-video">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.0!2d100.64!3d13.62!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDM3JzEyLjAiTiAxMDDCsDM4JzI0LjAiRQ!5e0!3m2!1sen!2sth!4v1"
-                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade" title="Branch 1 Map" class="w-full h-full"></iframe>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold mb-2 text-gray-900" data-i18n="branches.branch1.name">สาขา 1 - สำนักงานใหญ่</h3>
-                            <p class="text-gray-500 mb-1" data-i18n="branches.branch1.address">ถนนเทพารักษ์ กม.7 สมุทรปราการ</p>
-                            <p class="text-gray-400 text-sm mb-4" data-i18n="branches.branch1.hours">เปิดทุกวัน 08:00 - 18:00</p>
-                            <a href="https://maps.app.goo.gl/zb1DMVMYmrEFKQwt8" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold px-6 py-3 rounded-xl transition-colors min-h-[44px]">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-                                <span data-i18n="branches.getDirections">นำทาง</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Branch 2 -->
-                    <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
-                        <div class="aspect-video">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.0!2d100.65!3d13.63!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDM3JzQ4LjAiTiAxMDDCsDM5JzAwLjAiRQ!5e0!3m2!1sen!2sth!4v1"
-                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade" title="Branch 2 Map" class="w-full h-full"></iframe>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold mb-2 text-gray-900" data-i18n="branches.branch2.name">สาขา 2</h3>
-                            <p class="text-gray-500 mb-1" data-i18n="branches.branch2.address">สมุทรปราการ</p>
-                            <p class="text-gray-400 text-sm mb-4" data-i18n="branches.branch2.hours">เปิดทุกวัน 08:00 - 18:00</p>
-                            <a href="https://maps.app.goo.gl/5g4BhZd2KmXu3RzN9" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold px-6 py-3 rounded-xl transition-colors min-h-[44px]">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-                                <span data-i18n="branches.getDirections">นำทาง</span>
-                            </a>
-                        </div>
-                    </div>
-
+                <div id="branches-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 </div>
             </div>
         </section>
@@ -291,27 +181,7 @@
                 <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4" data-i18n="contact.title">ติดต่อเรา</h2>
                 <p class="text-gray-400 mb-12 max-w-xl mx-auto" data-i18n="contact.subtitle">พร้อมให้บริการและให้คำปรึกษา</p>
 
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                    <!-- Phone -->
-                    <a href="tel:0867016532" class="group bg-white/5 backdrop-blur-sm hover:bg-primary border border-white/10 hover:border-primary rounded-2xl p-6 transition-all duration-300 min-h-[48px] flex flex-col items-center justify-center gap-3">
-                        <span class="text-3xl">📞</span>
-                        <span class="text-white font-semibold" data-i18n="contact.phone">086 701 6532</span>
-                        <span class="text-gray-400 group-hover:text-white/70 text-sm transition-colors" data-i18n="contact.phoneLabel">โทรหาเรา</span>
-                    </a>
-
-                    <!-- LINE -->
-                    <a href="https://line.me/R/ti/p/@hengkimjuy" class="group bg-white/5 backdrop-blur-sm hover:bg-green-500 border border-white/10 hover:border-green-500 rounded-2xl p-6 transition-all duration-300 min-h-[48px] flex flex-col items-center justify-center gap-3">
-                        <span class="text-3xl">💬</span>
-                        <span class="text-white font-semibold" data-i18n="contact.line">@hengkimjuy</span>
-                        <span class="text-gray-400 group-hover:text-white/70 text-sm transition-colors" data-i18n="contact.lineLabel">LINE</span>
-                    </a>
-
-                    <!-- Facebook -->
-                    <a href="https://www.facebook.com/hengkimjuy" target="_blank" rel="noopener noreferrer" class="group bg-white/5 backdrop-blur-sm hover:bg-blue-600 border border-white/10 hover:border-blue-600 rounded-2xl p-6 transition-all duration-300 min-h-[48px] flex flex-col items-center justify-center gap-3">
-                        <span class="text-3xl">📘</span>
-                        <span class="text-white font-semibold" data-i18n="contact.facebook">Facebook</span>
-                        <span class="text-gray-400 group-hover:text-white/70 text-sm transition-colors" data-i18n="contact.facebookLabel">ติดตามเรา</span>
-                    </a>
+                <div id="contact-grid" class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 </div>
             </div>
         </section>
@@ -323,20 +193,20 @@
         <div class="max-w-7xl mx-auto">
             <div class="flex flex-col md:flex-row items-center justify-between gap-8 mb-8 pb-8 border-b border-gray-800">
                 <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center text-white font-bold text-lg">H</div>
+                    <div class="w-14 h-14 rounded-full overflow-hidden shadow-md"><img data-config="logo" src="images/logo.webp" alt="Logo" class="w-full h-full object-cover"></div>
                     <div>
                         <span class="font-bold text-lg">Heng Kimjuy Energy</span>
-                        <p class="text-gray-500 text-sm" data-i18n="footer.tagline">อู่ เฮง กิมจุ้ย เทพารักษ์</p>
+                        <p class="text-gray-500 text-sm" data-i18n="footer.tagline">อู่ เฮง กิมจุ้ย</p>
                     </div>
                 </div>
                 <div class="flex items-center gap-6">
-                    <a href="https://www.facebook.com/hengkimjuy" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-primary transition-colors" aria-label="Facebook">
+                    <a data-config="footer-facebook" href="#" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-primary transition-colors" aria-label="Facebook">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                     </a>
-                    <a href="https://line.me/R/ti/p/@hengkimjuy" class="text-gray-400 hover:text-green-400 transition-colors" aria-label="LINE">
+                    <a data-config="footer-line" href="#" class="text-gray-400 hover:text-green-400 transition-colors" aria-label="LINE">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
                     </a>
-                    <a href="tel:0867016532" class="text-gray-400 hover:text-primary transition-colors" aria-label="Phone">
+                    <a data-config="footer-phone" href="#" class="text-gray-400 hover:text-primary transition-colors" aria-label="Phone">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
                     </a>
                 </div>
@@ -356,6 +226,7 @@
     </div>
 
     <!-- ==================== Scripts ==================== -->
+    <script src="js/config.js"></script>
     <script src="js/translations.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/navigation.js"></script>
