@@ -10,7 +10,7 @@ Build a fully static, single-page website for Heng Kimjuy Energy using vanilla H
   - [x] 1.1 Create directory structure and base files
     - Create `index.html`, `css/custom.css`, `js/translations.js`, `js/i18n.js`, `js/navigation.js`, `js/gallery.js`, `js/main.js`
     - Create `images/` directory with `gallery/` and `services/` subdirectories
-    - Create placeholder images (logo.webp, hero-bg.webp, favicon.ico) or empty placeholder files
+    - Create placeholder images (logo.webp, hero-bg.webp, logo.ico) or empty placeholder files
     - _Requirements: 1.4_
 
   - [x] 1.2 Set up test configuration

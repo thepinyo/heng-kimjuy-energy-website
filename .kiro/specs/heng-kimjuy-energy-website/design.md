@@ -42,7 +42,7 @@ The site is a single `index.html` page with smooth-scroll navigation between sec
 │   │   └── ...
 │   ├── services/           # Service icons/images
 │   │   └── ...
-│   └── favicon.ico         # Favicon
+│   └── logo.ico            # Favicon
 └── README.md               # Deployment instructions
 ```
 
