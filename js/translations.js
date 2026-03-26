@@ -61,12 +61,12 @@ const translations = {
     "contact.badge": "ติดต่อ",
     "contact.title": "ติดต่อเรา",
     "contact.subtitle": "พร้อมให้บริการและให้คำปรึกษา",
-    "contact.phone": "086 701 6532",
+    "contact.phone": "086-701-6532",
     "contact.phoneLabel": "โทรหาเรา",
     "contact.line": "@hengkimjuy",
     "contact.lineLabel": "LINE",
     "contact.facebook": "Facebook",
-    "contact.facebookLabel": "ติดตามเรา",
+    "contact.facebookLabel": "ติดตามเรา ",
 
     // Footer
     "footer.tagline": "อู่ เฮง กิมจุ้ย",
