@@ -66,7 +66,7 @@ const translations = {
     "contact.line": "@hengkimjuy",
     "contact.lineLabel": "LINE",
     "contact.facebook": "Facebook",
-    "contact.facebookLabel": "ติดตามเรา ",
+    "contact.facebookLabel": "ติดตามเรา",
 
     // Footer
     "footer.tagline": "อู่ เฮง กิมจุ้ย",
