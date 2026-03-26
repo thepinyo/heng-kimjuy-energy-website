@@ -85,7 +85,7 @@ function renderFromConfig() {
       + '<span class="text-white font-semibold" data-i18n="' + line.displayKey + '">' + line.displayDefault + '</span>'
       + '<span class="text-gray-400 group-hover:text-white/70 text-sm transition-colors" data-i18n="' + line.labelKey + '">' + line.labelDefault + '</span></a>'
       + '<a href="' + fb.url + '" target="_blank" rel="noopener noreferrer" class="group bg-white/5 backdrop-blur-sm hover:bg-blue-600 border border-white/10 hover:border-blue-600 rounded-2xl p-6 transition-all duration-300 min-h-[48px] flex flex-col items-center justify-center gap-3">'
-      + '<img src="' + fb.icon + '" alt="Facebook" class="w-12 h-12">'
+      + '<img src="' + fb.icon + '" alt="Facebook" class="w-16 h-16">'
       + '<span class="text-white font-semibold" data-i18n="' + fb.displayKey + '">' + fb.displayDefault + '</span>'
       + '<span class="text-gray-400 group-hover:text-white/70 text-sm transition-colors" data-i18n="' + fb.labelKey + '">' + fb.labelDefault + '</span></a>';
   }
