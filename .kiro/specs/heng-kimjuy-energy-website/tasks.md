@@ -6,27 +6,27 @@ Build a fully static, single-page website for Heng Kimjuy Energy using vanilla H
 
 ## Tasks
 
-- [ ] 1. Set up project structure and configuration
-  - [ ] 1.1 Create directory structure and base files
+- [x] 1. Set up project structure and configuration
+  - [x] 1.1 Create directory structure and base files
     - Create `index.html`, `css/custom.css`, `js/translations.js`, `js/i18n.js`, `js/navigation.js`, `js/gallery.js`, `js/main.js`
     - Create `images/` directory with `gallery/` and `services/` subdirectories
     - Create placeholder images (logo.webp, hero-bg.webp, favicon.ico) or empty placeholder files
     - _Requirements: 1.4_
 
-  - [ ] 1.2 Set up test configuration
+  - [x] 1.2 Set up test configuration
     - Initialize `package.json` with Vitest, jsdom, fast-check, and @testing-library/dom as dev dependencies
     - Create `vitest.config.js` with jsdom environment
     - _Requirements: 1.4_
 
-- [ ] 2. Build the HTML page with Tailwind CDN and all sections
-  - [ ] 2.1 Create the `<head>` with meta tags, Tailwind CDN, inline Tailwind config, Google Fonts, and custom CSS link
+- [x] 2. Build the HTML page with Tailwind CDN and all sections
+  - [x] 2.1 Create the `<head>` with meta tags, Tailwind CDN, inline Tailwind config, Google Fonts, and custom CSS link
     - Include viewport meta, description, OG tags, favicon
     - Define Tailwind config with `primary: '#5FB3F9'`, `secondary: '#FFFFFF'`, and font families (thai, latin, chinese)
     - Link Google Fonts: Noto Sans Thai, Inter, Noto Sans SC
     - Link `css/custom.css`
     - _Requirements: 2.1, 2.5, 3.7, 11.1, 11.2, 11.4, 13.9_
 
-  - [ ] 2.2 Create the Navigation Bar with hamburger menu and language switcher
+  - [x] 2.2 Create the Navigation Bar with hamburger menu and language switcher
     - Fixed/sticky header with `bg-primary text-white`
     - Nav links (Home, Services, Gallery, Branches, Contact) with `data-i18n` attributes
     - Hamburger button visible below `md` breakpoint with `aria-label` and `aria-expanded`
@@ -34,30 +34,30 @@ Build a fully static, single-page website for Heng Kimjuy Energy using vanilla H
     - All touch targets minimum 44x44px
     - _Requirements: 2.2, 5.1, 5.3, 5.4, 3.8, 13.3, 13.10_
 
-  - [ ] 2.3 Create the Hero Section
+  - [x] 2.3 Create the Hero Section
     - Full-viewport section with `bg-primary text-white`
     - Logo image, brand name "Heng Kimjuy Energy", tagline with `data-i18n`
     - _Requirements: 2.3, 4.1, 4.3_
 
-  - [ ] 2.4 Create the Services Section
+  - [x] 2.4 Create the Services Section
     - Section with `data-i18n` title
     - Responsive grid: single-column on mobile, multi-column on desktop
     - Service cards with icon/image, title, and description — all with `data-i18n` attributes
     - _Requirements: 6.1, 6.2, 6.3_
 
-  - [ ] 2.5 Create the Gallery Section
+  - [x] 2.5 Create the Gallery Section
     - Responsive grid: `grid-cols-1 sm:grid-cols-2 lg:grid-cols-3`
     - Images with `loading="lazy"`, alt text via `data-i18n`, click handlers for lightbox
     - _Requirements: 7.1, 7.3, 7.4, 7.5, 12.2_
 
-  - [ ] 2.6 Create the Branches Section
+  - [x] 2.6 Create the Branches Section
     - Two branch cards in responsive grid (`grid-cols-1 md:grid-cols-2`)
     - Each card: branch name, address (with `data-i18n`), Google Maps embed iframe, "Get Directions" link with `target="_blank"`
     - Branch 1 directions: https://share.google/uA5EzS20EZJndoAkN
     - Branch 2 directions: https://share.google/aCAlHKOSAX6s9cGd7
     - _Requirements: 8.1, 8.2, 8.3_
 
-  - [ ] 2.7 Create the Contact Section
+  - [x] 2.7 Create the Contact Section
     - Phone link with `tel:0867016532`, display "086 701 6532"
     - LINE link to `https://line.me/R/ti/p/@hengkimjuy`
     - Facebook link to `https://www.facebook.com/hengkimjuy` with `target="_blank" rel="noopener noreferrer"`
@@ -65,36 +65,36 @@ Build a fully static, single-page website for Heng Kimjuy Energy using vanilla H
     - All with `data-i18n` attributes
     - _Requirements: 9.1, 9.2, 9.3, 9.4, 9.5_
 
-  - [ ] 2.8 Create the Footer
+  - [x] 2.8 Create the Footer
     - Copyright with brand name and current year
     - Facebook and LINE links
     - Phone number display
     - _Requirements: 10.1, 10.2, 10.3_
 
-  - [ ] 2.9 Create the Lightbox overlay markup
+  - [x] 2.9 Create the Lightbox overlay markup
     - Hidden `div#lightbox` with `role="dialog"`, `aria-label="Image viewer"`
     - Close button, prev/next buttons, image element
     - All buttons with `min-w-[44px] min-h-[44px]` and `aria-label`
     - _Requirements: 7.2, 12.3_
 
-  - [ ] 2.10 Add script tags for all JS modules at end of body
+  - [x] 2.10 Add script tags for all JS modules at end of body
     - Load order: `translations.js`, `i18n.js`, `navigation.js`, `gallery.js`, `main.js`
     - _Requirements: 1.1_
 
-- [ ] 3. Implement custom CSS
-  - [ ] 3.1 Write `css/custom.css` with lightbox animations and smooth scroll
+- [x] 3. Implement custom CSS
+  - [x] 3.1 Write `css/custom.css` with lightbox animations and smooth scroll
     - `html { scroll-behavior: smooth; }`
     - Lightbox fade-in/fade-out keyframe animations
     - _Requirements: 5.2_
 
-- [ ] 4. Implement the i18n system
-  - [ ] 4.1 Create `js/translations.js` with full translation data
+- [x] 4. Implement the i18n system
+  - [x] 4.1 Create `js/translations.js` with full translation data
     - Define `translations` object with `th`, `en`, `zh` keys
     - Include all translatable strings: nav labels, hero tagline, services titles/descriptions, gallery alt texts, branch names/addresses, contact labels, footer text
     - Use dot-notation keys matching `data-i18n` attributes in HTML
     - _Requirements: 13.1, 13.6_
 
-  - [ ] 4.2 Implement `js/i18n.js` with language switching logic
+  - [x] 4.2 Implement `js/i18n.js` with language switching logic
     - `getStoredLanguage()` — reads from localStorage with try/catch, defaults to `'th'`
     - `persistLanguage(langCode)` — writes to localStorage with try/catch
     - `applyTranslations(langCode)` — iterates `[data-i18n]` elements, sets `textContent`
@@ -118,11 +118,11 @@ Build a fully static, single-page website for Heng Kimjuy Energy using vanilla H
     - For any language code, `setLanguage(code)` then `getStoredLanguage()` returns the same code
     - **Validates: Requirements 13.8**
 
-- [ ] 5. Checkpoint - Verify i18n system
+- [x] 5. Checkpoint - Verify i18n system
   - Ensure all tests pass, ask the user if questions arise.
 
-- [ ] 6. Implement navigation module
-  - [ ] 6.1 Implement `js/navigation.js`
+- [x] 6. Implement navigation module
+  - [x] 6.1 Implement `js/navigation.js`
     - `initNavigation()` — sets up hamburger toggle, smooth scroll click handlers, active section highlighting on scroll
     - Hamburger toggle: flip `aria-expanded`, show/hide nav links
     - Nav link click: smooth scroll to target section, collapse hamburger menu on mobile
@@ -138,8 +138,8 @@ Build a fully static, single-page website for Heng Kimjuy Energy using vanilla H
     - For any nav link selected from the expanded hamburger menu (viewport < 768px), `aria-expanded` is set to `"false"` after activation
     - **Validates: Requirements 5.5**
 
-- [ ] 7. Implement gallery and lightbox module
-  - [ ] 7.1 Implement `js/gallery.js`
+- [x] 7. Implement gallery and lightbox module
+  - [x] 7.1 Implement `js/gallery.js`
     - `initGallery()` — attaches click handlers to gallery images
     - `openLightbox(imageSrc, altText)` — shows lightbox overlay with the clicked image
     - `closeLightbox()` — hides overlay, returns focus
@@ -159,16 +159,16 @@ Build a fully static, single-page website for Heng Kimjuy Energy using vanilla H
     - For any gallery image, clicking it opens the lightbox displaying that image's source
     - **Validates: Requirements 7.2**
 
-- [ ] 8. Implement main.js orchestration
-  - [ ] 8.1 Implement `js/main.js`
+- [x] 8. Implement main.js orchestration
+  - [x] 8.1 Implement `js/main.js`
     - On `DOMContentLoaded`: call `initI18n()`, `initNavigation()`, `initGallery()`
     - Wire everything together so all modules initialize in correct order
     - _Requirements: 1.1_
 
-- [ ] 9. Checkpoint - Verify all modules work together
+- [x] 9. Checkpoint - Verify all modules work together
   - Ensure all tests pass, ask the user if questions arise.
 
-- [ ] 10. Write remaining property and unit tests
+- [x] 10. Write remaining property and unit tests
   - [ ]* 10.1 Write property test for text contrast on primary background (Property 1)
     - **Property 1: Text contrast on primary background**
     - For any element with `bg-primary` (#5FB3F9) background, text color is white (#FFFFFF)
@@ -208,7 +208,7 @@ Build a fully static, single-page website for Heng Kimjuy Energy using vanilla H
     - Verify footer has copyright with current year
     - _Requirements: 11.1, 11.2, 11.3, 11.4, 13.2, 8.1, 9.1, 9.3, 9.4, 10.1, 10.2, 10.3_
 
-- [ ] 11. Final checkpoint - Ensure all tests pass
+- [x] 11. Final checkpoint - Ensure all tests pass
   - Ensure all tests pass, ask the user if questions arise.
 
 ## Notes
