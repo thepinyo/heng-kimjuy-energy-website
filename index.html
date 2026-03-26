@@ -67,10 +67,16 @@
 
             <div class="flex items-center gap-2">
                 <!-- Language Switcher -->
-                <div id="lang-switcher" class="flex items-center gap-1" aria-label="Select language">
-                    <button data-lang="th" class="lang-btn p-1 rounded-lg hover:bg-gray-100 transition-colors" aria-label="ภาษาไทย"><img src="images/icons/thailand.png" alt="Thai" class="w-7 h-7 rounded-sm"></button>
-                    <button data-lang="en" class="lang-btn p-1 rounded-lg hover:bg-gray-100 transition-colors" aria-label="English"><img src="images/icons/english.png" alt="English" class="w-7 h-7 rounded-sm"></button>
-                    <button data-lang="zh" class="lang-btn p-1 rounded-lg hover:bg-gray-100 transition-colors" aria-label="中文"><img src="images/icons/china.png" alt="Chinese" class="w-7 h-7 rounded-sm"></button>
+                <div id="lang-switcher" class="relative" aria-label="Select language">
+                    <button id="lang-current" class="flex items-center gap-1 p-1.5 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
+                        <img id="lang-current-img" src="images/icons/thailand.png" alt="Current language" class="w-7 h-7 rounded-sm">
+                        <svg class="w-3 h-3 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div id="lang-dropdown" class="hidden absolute right-0 top-full mt-1 bg-white rounded-lg shadow-lg border border-gray-100 py-1 z-[100] min-w-[120px]">
+                        <button data-lang="th" class="lang-btn flex items-center gap-2 px-3 py-1.5 hover:bg-gray-50 w-full transition-colors whitespace-nowrap"><img src="images/icons/thailand.png" alt="Thai" class="w-6 h-6 rounded-sm"><span class="text-sm text-gray-700">ไทย</span></button>
+                        <button data-lang="en" class="lang-btn flex items-center gap-2 px-3 py-1.5 hover:bg-gray-50 w-full transition-colors whitespace-nowrap"><img src="images/icons/english.png" alt="English" class="w-6 h-6 rounded-sm"><span class="text-sm text-gray-700">EN</span></button>
+                        <button data-lang="zh" class="lang-btn flex items-center gap-2 px-3 py-1.5 hover:bg-gray-50 w-full transition-colors whitespace-nowrap"><img src="images/icons/china.png" alt="Chinese" class="w-6 h-6 rounded-sm"><span class="text-sm text-gray-700">中文</span></button>
+                    </div>
                 </div>
 
                 <!-- Hamburger Button (mobile only) -->

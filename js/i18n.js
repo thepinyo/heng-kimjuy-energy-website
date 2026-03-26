@@ -87,20 +87,32 @@ function initI18n() {
   var lang = getStoredLanguage();
   setLanguage(lang);
 
-  var switcher = document.getElementById('lang-switcher');
-  if (switcher) {
-    // Highlight active language button
-    var buttons = switcher.querySelectorAll('.lang-btn');
+  var langImages = { th: 'images/icons/thailand.png', en: 'images/icons/english.png', zh: 'images/icons/china.png' };
+  var currentBtn = document.getElementById('lang-current');
+  var currentImg = document.getElementById('lang-current-img');
+  var dropdown = document.getElementById('lang-dropdown');
+
+  if (currentImg) {
+    currentImg.src = langImages[lang] || langImages.th;
+  }
+
+  if (currentBtn && dropdown) {
+    currentBtn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      dropdown.classList.toggle('hidden');
+    });
+
+    document.addEventListener('click', function () {
+      dropdown.classList.add('hidden');
+    });
+
+    var buttons = dropdown.querySelectorAll('.lang-btn');
     buttons.forEach(function (btn) {
-      var btnLang = btn.getAttribute('data-lang');
-      btn.classList.toggle('ring-2', btnLang === lang);
-      btn.classList.toggle('ring-primary', btnLang === lang);
       btn.addEventListener('click', function () {
+        var btnLang = btn.getAttribute('data-lang');
         setLanguage(btnLang);
-        buttons.forEach(function (b) {
-          b.classList.remove('ring-2', 'ring-primary');
-        });
-        btn.classList.add('ring-2', 'ring-primary');
+        currentImg.src = langImages[btnLang] || langImages.th;
+        dropdown.classList.add('hidden');
       });
     });
   }
