@@ -67,11 +67,11 @@
 
             <div class="flex items-center gap-2">
                 <!-- Language Switcher -->
-                <select id="lang-switcher" class="bg-gray-100 text-gray-700 rounded-lg px-3 py-2 text-sm min-h-[44px] border-0 focus:ring-2 focus:ring-primary/30 cursor-pointer" aria-label="Select language">
-                    <option value="th">🇹🇭 ไทย</option>
-                    <option value="en">🇬🇧 EN</option>
-                    <option value="zh">🇨🇳 中文</option>
-                </select>
+                <div id="lang-switcher" class="flex items-center gap-1" aria-label="Select language">
+                    <button data-lang="th" class="lang-btn p-1 rounded-lg hover:bg-gray-100 transition-colors" aria-label="ภาษาไทย"><img src="images/icons/thailand.png" alt="Thai" class="w-7 h-7 rounded-sm"></button>
+                    <button data-lang="en" class="lang-btn p-1 rounded-lg hover:bg-gray-100 transition-colors" aria-label="English"><img src="images/icons/english.png" alt="English" class="w-7 h-7 rounded-sm"></button>
+                    <button data-lang="zh" class="lang-btn p-1 rounded-lg hover:bg-gray-100 transition-colors" aria-label="中文"><img src="images/icons/china.png" alt="Chinese" class="w-7 h-7 rounded-sm"></button>
+                </div>
 
                 <!-- Hamburger Button (mobile only) -->
                 <button id="hamburger-btn" class="md:hidden p-2 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg hover:bg-gray-100 transition-colors" aria-label="Toggle menu" aria-expanded="false">

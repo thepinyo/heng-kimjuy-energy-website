@@ -89,9 +89,19 @@ function initI18n() {
 
   var switcher = document.getElementById('lang-switcher');
   if (switcher) {
-    switcher.value = lang;
-    switcher.addEventListener('change', function () {
-      setLanguage(this.value);
+    // Highlight active language button
+    var buttons = switcher.querySelectorAll('.lang-btn');
+    buttons.forEach(function (btn) {
+      var btnLang = btn.getAttribute('data-lang');
+      btn.classList.toggle('ring-2', btnLang === lang);
+      btn.classList.toggle('ring-primary', btnLang === lang);
+      btn.addEventListener('click', function () {
+        setLanguage(btnLang);
+        buttons.forEach(function (b) {
+          b.classList.remove('ring-2', 'ring-primary');
+        });
+        btn.classList.add('ring-2', 'ring-primary');
+      });
     });
   }
 }
