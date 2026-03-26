@@ -68,7 +68,7 @@ const translations = {
     "contact.facebookLabel": "ติดตามเรา",
 
     // Footer
-    "footer.tagline": "อู่ เฮง กิมจุ้ย เทพารักษ์",
+    "footer.tagline": "อู่ เฮง กิมจุ้ย",
     "footer.rights": "สงวนลิขสิทธิ์"
   },
 
