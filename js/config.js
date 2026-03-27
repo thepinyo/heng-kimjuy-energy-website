@@ -101,11 +101,17 @@ var SITE_CONFIG = {
   },
 
   // ==================== Reviews ====================
+  // To add real customer photos:
+  // 1. Save profile photos to images/reviews/ (e.g. customer1.jpg)
+  // 2. Save review photos to images/reviews/ (e.g. review1.jpg)
+  // 3. Update avatar and photo fields below
   reviews: {
     facebookMentionsUrl: "https://www.facebook.com/hengkimjuy/reviews",
     items: [
       {
         name: "คุณสมชาย",
+        avatar: "https://api.dicebear.com/9.x/thumbs/svg?seed=somchai",
+        photo: "",
         rating: 5,
         text: "บริการดีมาก ช่างมีฝีมือ ราคาไม่แพง แนะนำเลยครับ",
         date: "2025-12",
@@ -113,6 +119,8 @@ var SITE_CONFIG = {
       },
       {
         name: "คุณวิภา",
+        avatar: "https://api.dicebear.com/9.x/thumbs/svg?seed=wipa",
+        photo: "",
         rating: 5,
         text: "เปลี่ยนถ่ายน้ำมันเครื่องที่นี่ประจำ พนักงานใจดี งานเร็ว",
         date: "2025-11",
@@ -120,6 +128,8 @@ var SITE_CONFIG = {
       },
       {
         name: "คุณธนา",
+        avatar: "https://api.dicebear.com/9.x/thumbs/svg?seed=thana",
+        photo: "",
         rating: 5,
         text: "แอร์รถเสีย มาซ่อมที่นี่ เย็นฉ่ำเหมือนใหม่ ราคาเป็นกันเอง",
         date: "2025-10",
@@ -127,6 +137,8 @@ var SITE_CONFIG = {
       },
       {
         name: "คุณนภา",
+        avatar: "https://api.dicebear.com/9.x/thumbs/svg?seed=napa",
+        photo: "",
         rating: 5,
         text: "ตรวจเช็คสภาพรถก่อนเดินทาง ละเอียดมาก อุ่นใจค่ะ",
         date: "2025-09",
@@ -134,6 +146,8 @@ var SITE_CONFIG = {
       },
       {
         name: "คุณพิชัย",
+        avatar: "https://api.dicebear.com/9.x/thumbs/svg?seed=pichai",
+        photo: "",
         rating: 5,
         text: "เบรกมีปัญหา มาเปลี่ยนที่นี่ ช่างอธิบายให้ฟังทุกขั้นตอน ประทับใจ",
         date: "2025-08",
@@ -141,6 +155,8 @@ var SITE_CONFIG = {
       },
       {
         name: "คุณอรุณ",
+        avatar: "https://api.dicebear.com/9.x/thumbs/svg?seed=arun",
+        photo: "",
         rating: 4,
         text: "เปลี่ยนยางใหม่ 4 เส้น ตั้งศูนย์ถ่วงล้อเรียบร้อย รถวิ่งนิ่มขึ้นมาก",
         date: "2025-07",
