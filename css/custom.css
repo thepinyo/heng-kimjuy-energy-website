@@ -29,3 +29,12 @@ html {
 body.lightbox-open {
   overflow: hidden;
 }
+
+/* Reviews horizontal scroll */
+.reviews-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.reviews-scroll::-webkit-scrollbar {
+  display: none;
+}
