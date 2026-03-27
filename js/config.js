@@ -86,7 +86,7 @@ var SITE_CONFIG = {
 
   // ==================== Gallery ====================
   gallery: {
-    facebookPhotosUrl: "https://www.facebook.com/hengkimjuy/photos",
+    facebookPhotosUrl: "https://www.facebook.com/hengkimjuy",
     photos: [
       { src: "https://images.unsplash.com/photo-1541968047768-c92c393e0e79?w=1000&q=80", alt: "ผลงานซ่อมรถยนต์", altKey: "gallery.photo1.alt" },
       { src: "images/gallery/photo02.jpg", alt: "ภายในอู่ซ่อมรถ", altKey: "gallery.photo2.alt" },
