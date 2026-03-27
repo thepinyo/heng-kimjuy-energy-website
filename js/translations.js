@@ -5,6 +5,7 @@ const translations = {
     "nav.home": "หน้าแรก",
     "nav.services": "บริการ",
     "nav.gallery": "แกลเลอรี",
+    "nav.reviews": "รีวิว",
     "nav.branches": "สาขา",
     "nav.contact": "ติดต่อเรา",
 
@@ -45,6 +46,12 @@ const translations = {
     "gallery.photo5.alt": "ซ่อมเครื่องยนต์",
     "gallery.photo6.alt": "ทีมช่างซ่อมรถ",
 
+    // Reviews
+    "reviews.badge": "รีวิว",
+    "reviews.title": "เสียงจากลูกค้า",
+    "reviews.subtitle": "ความคิดเห็นจากลูกค้าที่ไว้วางใจเรา",
+    "reviews.viewAll": "ดูรีวิวทั้งหมดบน Facebook →",
+
     // Branches
     "branches.badge": "สาขา",
     "branches.title": "สาขาของเรา",
@@ -78,6 +85,7 @@ const translations = {
     "nav.home": "Home",
     "nav.services": "Services",
     "nav.gallery": "Gallery",
+    "nav.reviews": "Reviews",
     "nav.branches": "Branches",
     "nav.contact": "Contact",
 
@@ -118,6 +126,12 @@ const translations = {
     "gallery.photo5.alt": "Engine repair",
     "gallery.photo6.alt": "Mechanic team",
 
+    // Reviews
+    "reviews.badge": "Reviews",
+    "reviews.title": "Customer Reviews",
+    "reviews.subtitle": "What our customers say about us",
+    "reviews.viewAll": "See all reviews on Facebook →",
+
     // Branches
     "branches.badge": "Locations",
     "branches.title": "Our Branches",
@@ -151,6 +165,7 @@ const translations = {
     "nav.home": "首页",
     "nav.services": "服务",
     "nav.gallery": "相册",
+    "nav.reviews": "评价",
     "nav.branches": "分店",
     "nav.contact": "联系我们",
 
@@ -190,6 +205,12 @@ const translations = {
     "gallery.photo4.alt": "换油服务",
     "gallery.photo5.alt": "发动机维修",
     "gallery.photo6.alt": "维修团队",
+
+    // Reviews
+    "reviews.badge": "评价",
+    "reviews.title": "客户评价",
+    "reviews.subtitle": "客户对我们的评价",
+    "reviews.viewAll": "在Facebook上查看所有评价 →",
 
     // Branches
     "branches.badge": "分店",
