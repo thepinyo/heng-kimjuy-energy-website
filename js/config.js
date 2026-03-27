@@ -326,9 +326,9 @@ var SITE_CONFIG = {
       icon: "images/icons/contact.gif",
     },
     line: {
-      url: "https://line.me/R/ti/p/@hengkimjuy",
+      url: "https://line.me/R/ti/p/@364hgjpk",
       displayKey: "contact.line",
-      displayDefault: "@hengkimjuy",
+      displayDefault: "@364hgjpk",
       labelKey: "contact.lineLabel",
       labelDefault: "LINE",
       icon: "images/icons/line.png",
@@ -346,7 +346,7 @@ var SITE_CONFIG = {
   // ==================== Social Links (Footer) ====================
   social: {
     facebook: "https://www.facebook.com/hengkimjuy",
-    line: "https://line.me/R/ti/p/@hengkimjuy",
+    line: "https://line.me/R/ti/p/@364hgjpk",
     phone: "0867016532",
   },
 };

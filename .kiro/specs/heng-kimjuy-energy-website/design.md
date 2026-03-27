@@ -238,7 +238,7 @@ Branch cards use Tailwind grid layout: `grid grid-cols-1 md:grid-cols-2 gap-8`. 
 **Responsibilities:** Display phone, LINE, Facebook contact options as tappable buttons on mobile.
 
 - Phone: `<a href="tel:0867016532" class="block w-full py-3 text-center bg-primary text-white rounded-lg min-h-[48px] md:inline-block md:w-auto md:px-6">086 701 6532</a>`
-- LINE: `<a href="https://line.me/R/ti/p/@hengkimjuy" class="block w-full py-3 text-center bg-green-500 text-white rounded-lg min-h-[48px] md:inline-block md:w-auto md:px-6">@hengkimjuy</a>`
+- LINE: `<a href="https://line.me/R/ti/p/@364hgjpk" class="block w-full py-3 text-center bg-green-500 text-white rounded-lg min-h-[48px] md:inline-block md:w-auto md:px-6">@364hgjpk</a>`
 - Facebook: `<a href="https://www.facebook.com/hengkimjuy" target="_blank" rel="noopener noreferrer" class="block w-full py-3 text-center bg-blue-600 text-white rounded-lg min-h-[48px] md:inline-block md:w-auto md:px-6">Facebook</a>`
 
 On mobile, these render as large tappable buttons (min 48px height, full-width) using Tailwind's `block w-full min-h-[48px]` utilities. On desktop, they switch to inline with `md:inline-block md:w-auto`.
@@ -305,8 +305,8 @@ const branches = [
 const contactInfo = {
   phone: "0867016532",
   phoneDisplay: "086 701 6532",
-  lineId: "@hengkimjuy",
-  lineUrl: "https://line.me/R/ti/p/@hengkimjuy",
+  lineId: "@364hgjpk",
+  lineUrl: "https://line.me/R/ti/p/@364hgjpk",
   facebookUrl: "https://www.facebook.com/hengkimjuy"
 };
 ```

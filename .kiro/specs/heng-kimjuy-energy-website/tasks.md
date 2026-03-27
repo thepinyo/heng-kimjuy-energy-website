@@ -59,7 +59,7 @@ Build a fully static, single-page website for Heng Kimjuy Energy using vanilla H
 
   - [x] 2.7 Create the Contact Section
     - Phone link with `tel:0867016532`, display "086 701 6532"
-    - LINE link to `https://line.me/R/ti/p/@hengkimjuy`
+    - LINE link to `https://line.me/R/ti/p/@364hgjpk`
     - Facebook link to `https://www.facebook.com/hengkimjuy` with `target="_blank" rel="noopener noreferrer"`
     - Mobile: full-width tappable buttons with `min-h-[48px]`; Desktop: inline buttons
     - All with `data-i18n` attributes
