@@ -110,7 +110,7 @@ var SITE_CONFIG = {
     items: [
       {
         name: "คุณสมชาย",
-        avatar: "https://api.dicebear.com/9.x/thumbs/svg?seed=somchai",
+        avatar: "https://api.dicebear.com/9.x/bottts-neutral/svg?seed=somchai",
         photo: "",
         rating: 5,
         text: "บริการดีมาก ช่างมีฝีมือ ราคาไม่แพง แนะนำเลยครับ",
@@ -119,7 +119,7 @@ var SITE_CONFIG = {
       },
       {
         name: "คุณวิภา",
-        avatar: "https://api.dicebear.com/9.x/thumbs/svg?seed=wipa",
+        avatar: "https://api.dicebear.com/9.x/bottts-neutral/svg?seed=wipa",
         photo: "",
         rating: 5,
         text: "เปลี่ยนถ่ายน้ำมันเครื่องที่นี่ประจำ พนักงานใจดี งานเร็ว",
@@ -128,7 +128,7 @@ var SITE_CONFIG = {
       },
       {
         name: "คุณธนา",
-        avatar: "https://api.dicebear.com/9.x/thumbs/svg?seed=thana",
+        avatar: "https://api.dicebear.com/9.x/bottts-neutral/svg?seed=thana",
         photo: "",
         rating: 5,
         text: "แอร์รถเสีย มาซ่อมที่นี่ เย็นฉ่ำเหมือนใหม่ ราคาเป็นกันเอง",
@@ -137,7 +137,7 @@ var SITE_CONFIG = {
       },
       {
         name: "คุณนภา",
-        avatar: "https://api.dicebear.com/9.x/thumbs/svg?seed=napa",
+        avatar: "https://api.dicebear.com/9.x/bottts-neutral/svg?seed=napa",
         photo: "",
         rating: 5,
         text: "ตรวจเช็คสภาพรถก่อนเดินทาง ละเอียดมาก อุ่นใจค่ะ",
@@ -146,7 +146,7 @@ var SITE_CONFIG = {
       },
       {
         name: "คุณพิชัย",
-        avatar: "https://api.dicebear.com/9.x/thumbs/svg?seed=pichai",
+        avatar: "https://api.dicebear.com/9.x/bottts-neutral/svg?seed=pichai",
         photo: "",
         rating: 5,
         text: "เบรกมีปัญหา มาเปลี่ยนที่นี่ ช่างอธิบายให้ฟังทุกขั้นตอน ประทับใจ",
@@ -155,7 +155,7 @@ var SITE_CONFIG = {
       },
       {
         name: "คุณอรุณ",
-        avatar: "https://api.dicebear.com/9.x/thumbs/svg?seed=arun",
+        avatar: "https://api.dicebear.com/9.x/bottts-neutral/svg?seed=arun",
         photo: "",
         rating: 4,
         text: "เปลี่ยนยางใหม่ 4 เส้น ตั้งศูนย์ถ่วงล้อเรียบร้อย รถวิ่งนิ่มขึ้นมาก",
@@ -164,7 +164,7 @@ var SITE_CONFIG = {
       },
       {
         name: "คุณมานะ",
-        avatar: "https://api.dicebear.com/9.x/thumbs/svg?seed=mana",
+        avatar: "https://api.dicebear.com/9.x/bottts-neutral/svg?seed=mana",
         photo: "",
         rating: 5,
         text: "ใช้บริการมาหลายปี ไม่เคยผิดหวัง ช่างซื่อสัตย์ บอกตรงๆ",
@@ -173,7 +173,7 @@ var SITE_CONFIG = {
       },
       {
         name: "คุณจันทร์",
-        avatar: "https://api.dicebear.com/9.x/thumbs/svg?seed=chan",
+        avatar: "https://api.dicebear.com/9.x/bottts-neutral/svg?seed=chan",
         photo: "",
         rating: 5,
         text: "พารถมาเช็คระยะ ราคาเป็นกันเอง ไม่ขายของเกินจำเป็น",
@@ -182,7 +182,7 @@ var SITE_CONFIG = {
       },
       {
         name: "คุณวีระ",
-        avatar: "https://api.dicebear.com/9.x/thumbs/svg?seed=weera",
+        avatar: "https://api.dicebear.com/9.x/bottts-neutral/svg?seed=weera",
         photo: "",
         rating: 5,
         text: "เครื่องยนต์มีเสียงดัง มาเช็คที่นี่ แก้ปัญหาได้ตรงจุด ขอบคุณครับ",
@@ -191,7 +191,7 @@ var SITE_CONFIG = {
       },
       {
         name: "คุณสุดา",
-        avatar: "https://api.dicebear.com/9.x/thumbs/svg?seed=suda",
+        avatar: "https://api.dicebear.com/9.x/bottts-neutral/svg?seed=suda",
         photo: "",
         rating: 5,
         text: "แอร์ไม่เย็น มาเติมน้ำยาแอร์ เย็นฉ่ำเลยค่ะ รอไม่นาน",
@@ -200,7 +200,7 @@ var SITE_CONFIG = {
       },
       {
         name: "คุณประเสริฐ",
-        avatar: "https://api.dicebear.com/9.x/thumbs/svg?seed=prasert",
+        avatar: "https://api.dicebear.com/9.x/bottts-neutral/svg?seed=prasert",
         photo: "",
         rating: 4,
         text: "เปลี่ยนผ้าเบรกหน้า-หลัง งานเรียบร้อย ราคาสมเหตุสมผล",
@@ -209,7 +209,7 @@ var SITE_CONFIG = {
       },
       {
         name: "คุณกมล",
-        avatar: "https://api.dicebear.com/9.x/thumbs/svg?seed=kamol",
+        avatar: "https://api.dicebear.com/9.x/bottts-neutral/svg?seed=kamol",
         photo: "",
         rating: 5,
         text: "รถเกียร์กระตุก มาซ่อมที่นี่ เปลี่ยนน้ำมันเกียร์แล้วหายเลย",
@@ -218,7 +218,7 @@ var SITE_CONFIG = {
       },
       {
         name: "คุณรัตนา",
-        avatar: "https://api.dicebear.com/9.x/thumbs/svg?seed=rattana",
+        avatar: "https://api.dicebear.com/9.x/bottts-neutral/svg?seed=rattana",
         photo: "",
         rating: 5,
         text: "พาแม่มาเปลี่ยนยาง ช่างแนะนำยางที่เหมาะกับรถ ไม่ยัดเยียด",
@@ -227,7 +227,7 @@ var SITE_CONFIG = {
       },
       {
         name: "คุณชัยวัฒน์",
-        avatar: "https://api.dicebear.com/9.x/thumbs/svg?seed=chaiwat",
+        avatar: "https://api.dicebear.com/9.x/bottts-neutral/svg?seed=chaiwat",
         photo: "",
         rating: 5,
         text: "ซ่อมระบบไฟรถ หาที่อื่นไม่ได้ มาที่นี่แก้ได้เลย เก่งมาก",
@@ -236,7 +236,7 @@ var SITE_CONFIG = {
       },
       {
         name: "คุณพรทิพย์",
-        avatar: "https://api.dicebear.com/9.x/thumbs/svg?seed=porntip",
+        avatar: "https://api.dicebear.com/9.x/bottts-neutral/svg?seed=porntip",
         photo: "",
         rating: 5,
         text: "เป็นผู้หญิงไม่รู้เรื่องรถเลย แต่ช่างอธิบายให้ฟังเข้าใจง่าย ไม่โกง",
@@ -245,7 +245,7 @@ var SITE_CONFIG = {
       },
       {
         name: "คุณสมศักดิ์",
-        avatar: "https://api.dicebear.com/9.x/thumbs/svg?seed=somsak",
+        avatar: "https://api.dicebear.com/9.x/bottts-neutral/svg?seed=somsak",
         photo: "",
         rating: 4,
         text: "เปลี่ยนถ่ายน้ำมันเครื่องสังเคราะห์ ราคาถูกกว่าศูนย์ งานดีเหมือนกัน",
@@ -254,7 +254,7 @@ var SITE_CONFIG = {
       },
       {
         name: "คุณอนันต์",
-        avatar: "https://api.dicebear.com/9.x/thumbs/svg?seed=anan",
+        avatar: "https://api.dicebear.com/9.x/bottts-neutral/svg?seed=anan",
         photo: "",
         rating: 5,
         text: "คอมเพรสเซอร์แอร์เสีย เปลี่ยนใหม่ ราคาดี รับประกันด้วย",
@@ -263,7 +263,7 @@ var SITE_CONFIG = {
       },
       {
         name: "คุณดวงใจ",
-        avatar: "https://api.dicebear.com/9.x/thumbs/svg?seed=duangjai",
+        avatar: "https://api.dicebear.com/9.x/bottts-neutral/svg?seed=duangjai",
         photo: "",
         rating: 5,
         text: "มาตรวจเช็คก่อนขับไปต่างจังหวัด ช่างเช็คละเอียดทุกจุด สบายใจ",
@@ -272,7 +272,7 @@ var SITE_CONFIG = {
       },
       {
         name: "คุณภาณุ",
-        avatar: "https://api.dicebear.com/9.x/thumbs/svg?seed=panu",
+        avatar: "https://api.dicebear.com/9.x/bottts-neutral/svg?seed=panu",
         photo: "",
         rating: 5,
         text: "จานเบรกหลังสึก เปลี่ยนใหม่ทั้งคู่ เบรกนิ่มขึ้นมาก ขอบคุณครับ",
@@ -281,7 +281,7 @@ var SITE_CONFIG = {
       },
       {
         name: "คุณศิริพร",
-        avatar: "https://api.dicebear.com/9.x/thumbs/svg?seed=siriporn",
+        avatar: "https://api.dicebear.com/9.x/bottts-neutral/svg?seed=siriporn",
         photo: "",
         rating: 5,
         text: "ตั้งศูนย์ถ่วงล้อ รถวิ่งนิ่งไม่สั่น ราคา 400 บาท คุ้มมากค่ะ",
