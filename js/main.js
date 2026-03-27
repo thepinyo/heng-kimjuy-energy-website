@@ -77,11 +77,11 @@ function renderFromConfig() {
     var fb = c.contact.facebook;
     contactGrid.innerHTML =
       '<a href="tel:' + phone.number + '" class="group bg-white/5 backdrop-blur-sm hover:bg-primary border border-white/10 hover:border-primary rounded-2xl p-6 transition-all duration-300 min-h-[48px] flex flex-col items-center justify-center gap-3">'
-      + '<img src="' + phone.icon + '" alt="Contact" class="w-12 h-12">'
+      + '<img src="' + phone.icon + '" alt="Contact" class="w-16 h-16">'
       + '<span class="text-white font-semibold" data-i18n="' + phone.displayKey + '">' + phone.displayDefault + '</span>'
       + '<span class="text-gray-400 group-hover:text-white/70 text-sm transition-colors" data-i18n="' + phone.labelKey + '">' + phone.labelDefault + '</span></a>'
       + '<a href="' + line.url + '" class="group bg-white/5 backdrop-blur-sm hover:bg-green-500 border border-white/10 hover:border-green-500 rounded-2xl p-6 transition-all duration-300 min-h-[48px] flex flex-col items-center justify-center gap-3">'
-      + '<img src="' + line.icon + '" alt="LINE" class="w-12 h-12">'
+      + '<img src="' + line.icon + '" alt="LINE" class="w-16 h-16">'
       + '<span class="text-white font-semibold" data-i18n="' + line.displayKey + '">' + line.displayDefault + '</span>'
       + '<span class="text-gray-400 group-hover:text-white/70 text-sm transition-colors" data-i18n="' + line.labelKey + '">' + line.labelDefault + '</span></a>'
       + '<a href="' + fb.url + '" target="_blank" rel="noopener noreferrer" class="group bg-white/5 backdrop-blur-sm hover:bg-blue-600 border border-white/10 hover:border-blue-600 rounded-2xl p-6 transition-all duration-300 min-h-[48px] flex flex-col items-center justify-center gap-3">'
